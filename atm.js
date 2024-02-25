@@ -8,10 +8,10 @@ let selectUserNumber;
 let selectPin;
 let atm;
 let selectedUser;
-runProgram();
+// runATM(); html დან ვიძახებთ, ღილაკზე დაჭერით
 
 // ეს არის ნახევრად რეკურსოული ფუნქცია, რომელიც პროგრამის წარმატების დასრულების შემდეგ იუზერის სურვილის შემთხვევაში გამოიძახებს საკუთარ თავს
-function runProgram() {
+function runATM() {
   // მომხმარებელს ვაძლევთ საშუალებას რომ აირჩიოს იუზერი, არასწორი ინფო სშემოყვანის შემთხვევაში ამოდი შესაბამისი ალერტი. 
   while (true) {
     selectUserNumber = parseInt(
@@ -78,7 +78,7 @@ function runProgram() {
   // აქამდე თუ მოვიდა, ნიშნავს რომ პროგრამა წარმატებით დასრულდა, ეს ფუნქცია კი ყველაფერს თავიდან დაიწყებს
   const resumeProcess = parseInt(prompt('თუ გსურთ პროცესის თავიადნ დაწყება? აკრიფეთ ციფრი 1, სხვა შემთხვევაში პროცესი დასრულდება'));
   if (resumeProcess === 1) { 
-    runProgram();
+    runATM();
   }
 }
 
